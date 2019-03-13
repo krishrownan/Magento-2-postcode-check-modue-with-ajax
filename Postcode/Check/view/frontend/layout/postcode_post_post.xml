@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<!-- <head>
+	<link src="Product_Carousel::js/jquery.min.js"/>
+	<link src="Product_Carousel::js/owl.carousel.min.js"/>
+	<css src="Product_Carousel::css/owl.theme.default.min.css" />
+	<css src="Product_Carousel::css/owl.carousel.min.css" />
+</head> -->
+    <body>
+        <referenceContainer name="content">
+            <block class="Postcode\Check\Block\Postcode" name="postcode" template="Postcode_Check::check.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

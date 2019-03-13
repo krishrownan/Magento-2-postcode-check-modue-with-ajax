@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<head>
+	<css src="Postcode_Check::css/custom_style.css" />
+
+	<script src="Postcode_Check::js/custom_js.js"/>
+
+</head>
+    <body>
+    <referenceContainer name="product.info.main">
+	     <container name="product.info.afterprice" after="product.info.price">
+	        <block class="Postcode\Check\Block\Postcode" name="postcode-check" template="check.phtml" />
+	     </container>
+	</referenceContainer>
+ </body>
+</page>

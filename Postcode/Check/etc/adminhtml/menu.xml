@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Postcode_Check::code" title="Postcode" module="Postcode_Check" sortOrder="20" resource="Postcode_Check::code"/>
+        <add id="Postcode_Check::list" title="Manage Code" module="Postcode_Check" sortOrder="10" action="postcode/index/index" resource="Postcode_Check::list" parent="Postcode_Check::code"/>
+	</menu>
+</config>

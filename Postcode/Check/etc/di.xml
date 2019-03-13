@@ -1,0 +1,16 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <preference for="Postcode\Check\Api\HelloInterface" type="Postcode\Check\Model\Hello" />
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="postcode_check_listing_data_source" xsi:type="string">Postcode\Check\Model\Resource\Postcode\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Postcode\Check\Model\Resource\Postcode\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">postcode_check</argument>
+            <argument name="resourceModel" xsi:type="string">Postcode\Check\Model\Resource\Postcode</argument>
+        </arguments>
+    </virtualType>
+</config>

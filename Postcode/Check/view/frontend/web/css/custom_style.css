@@ -1,0 +1,49 @@
+form#postcode-validate-detail {
+    display: table;
+    width: 100%;
+}
+
+form#postcode-validate-detail .actions {
+    display: table-cell;
+    width: 1%;
+    vertical-align: top;
+}
+
+.custom-postcode label{
+
+	display: none;
+}
+
+form#postcode-validate-detail button.action.primary {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -1px;
+    white-space: nowrap;
+}
+
+.check.postcode .content {
+    width: 65%;
+}
+
+.check.postcode .title {
+    width: 25%;
+    float: left;
+    font-size: 20px;
+}
+
+.error-msg {
+    color: #d81111;
+    font-size: 16px;
+}
+
+.success-response .avail{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 14px;
+    line-height: 12px;
+    color: #18d818;
+}
+
+p.not-avail {
+    color: #f93232;
+}

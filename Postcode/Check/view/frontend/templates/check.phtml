@@ -1,0 +1,25 @@
+<div class="check postcode">
+    <div class="content">
+        <form class="form form-submit"
+            novalidate
+            action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>"
+            method="post"
+            data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+            id="postcode-validate-detail">
+            <div class="field custom-postcode">
+                <div class="control">
+                    <input name="postcode" type="text" id="postcode" placeholder="<?= $block->escapeHtmlAttr(__('Enter your  code')) ?>"/>
+                </div>
+            </div>
+             <div class="error-msg" style="display: none;">Please enter valid postcode</div>
+             <div class="success-response">
+             </div>
+            <div class="actions">
+                <button class="action primary" title="<?= $block->escapeHtmlAttr(__('Check')) ?>" type="submit">
+                    <span><?= $block->escapeHtml(__('Check')) ?></span>
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
